@@ -1,0 +1,31 @@
+clear
+add bob
+add joe
+add jim
+add mike
+add kurt
+add des
+add marcos
+add bryson
+add shane
+add steve
+add richard
+add ryan
+add logan
+add johnny
+print
+level 0: mike(5) 
+level 1: jim(4) shane(3) 
+level 2: bryson(2) kurt(3) richard(2) steve(1) 
+level 3: bob(1) des(1) joe(2) marcos(2) ryan(1) 
+level 4: johnny(1) logan(1) 
+find joe true
+remove bob
+remove joe
+remove jim
+print
+level 0: mike(4) 
+level 1: johnny(3) shane(3) 
+level 2: bryson(2) logan(2) richard(2) steve(1) 
+level 3: des(1) kurt(1) marcos(1) ryan(1) 
+find joe false

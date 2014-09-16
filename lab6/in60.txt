@@ -1,0 +1,22 @@
+clear
+add bob
+add joe
+add jim
+add mike
+add kurt
+add des
+add marcos
+add bryson
+add shane
+add steve
+add richard
+add ryan
+add logan
+add johnny
+print
+find joe
+remove bob
+remove joe
+remove jim
+print
+find joe

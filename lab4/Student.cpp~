@@ -1,0 +1,173 @@
+#include "Student.h"
+#include <list>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+
+Student::Student(string ID_Number_in)
+{
+	ID_Number = ID_Number_in;
+}
+
+
+Student::Student()
+{
+	
+}
+
+
+Student::~Student(){}
+
+
+
+string Student::getID_Number()
+{
+	return ID_Number;
+}
+
+int Student::get_compareCount()
+{
+	return compareCount;
+}
+
+void Student::reset_compareCount()
+{
+	compareCount = 0;
+}
+
+/*
+void print_Student_Vector()
+{
+	for(int i=0, i < StudentVector.size(), 
+	cout << ID_Number << endl;
+}
+
+void Student::print_Student_List()
+{
+	for(list_it=StudentList.begin(); list_it!=StudentList.end(); list_it++)
+		{
+			cout << *list_it << endl;
+		}
+}
+
+
+void Student::print_Student_Set()
+{
+	for(set_it=StudentSet.begin(); set_it!=StudentSet.end(); set_it++)
+		{
+			cout << *set_it << endl;
+		}
+}
+
+void Student::load_stud_vec(string ID_Number)
+{
+	StudentVector.push_back(ID_Number);
+}
+
+void Student::load_stud_list(string ID_Number)
+{
+	list_it = StudentList.begin();
+	StudentList.insert(list_it, ID_Number);
+}
+
+void Student::load_stud_set(string ID_Number)
+{
+	StudentSet.insert(ID_Number);
+}
+
+list<string> Student::return_list()
+{
+	return StudentList;
+}
+
+
+set<string> Student::return_set()
+{
+	return StudentSet;
+}
+
+vector<string> Student::return_vector()
+{
+	return StudentVector;
+}
+*/
+
+
+
+
+// PRINTS
+
+string Student::print_Selection_Sort(vector<Student>& studvec)
+{
+	stringstream ss;
+	int quarter_size = studvec.size() / 4;
+	int half_size = studvec.size() / 2;
+	int size = studvec.size();
+
+	ss << "Selection Sort\n" << "size: " << quarter_size << "    " << "compares: " << compareCount << endl;
+	ss << "size: " << half_size << "    " << "compares: " << compareCount << endl;
+	ss << "size: " << size << "    " << "compares: " << compareCount << endl;
+	return ss.str();
+}
+string Student::print_Insertion_Sort()
+{
+	stringstream ss;
+	//int quarter_size = studvec.size() / 4;
+	//int half_size = studvec.size() / 2;
+	//int size = studvec.size();
+
+	ss << "Insertion Sort\n" << "size: " << "size" << "    " << "compares: " << "compares" << endl;
+	ss << "size: " << "size" << "    " << "compares: " << "compares" << endl;
+	ss << "size: " << "size" << "    " << "compares: " << "compares" << endl;
+	return ss.str();
+}
+
+string Student::print_std_list_sort()
+{
+	stringstream ss;
+
+	ss << "std::list.sort\n" << "size: " << "size" << "    " << "compares: " << "compares" << endl;
+	ss << "size: " << "size" << "    " << "compares: " << "compares" << endl;
+	ss << "size: " << "size" << "    " << "compares: " << "compares" << endl;
+	return ss.str();
+}
+
+string Student::print_Linear_Search()
+{
+	stringstream ss;
+	//int quarter_size = studvec.size() / 4;
+	//int half_size = studvec.size() / 2;
+	//int size = studvec.size();
+
+	ss << "Linear Search\n" << "size: " << "size" << "    " << "compares: " << "compares" << endl;
+	ss << "size: " << "size" << "    " << "compares: " << "compares" << endl;
+	ss << "size: " << "size" << "    " << "compares: " << "compares" << endl;
+	return ss.str();
+}
+
+string Student::print_std_find()
+{
+	stringstream ss;
+	//int quarter_size = studvec.size() / 4;
+	//int half_size = studvec.size() / 2;
+	//int size = studvec.size();
+
+	ss << "std::find\n" << "size: " << "size" << "    " << "compares: " << "compares" << endl;
+	ss << "size: " << "size" << "    " << "compares: " << "compares" << endl;
+	ss << "size: " << "size" << "    " << "compares: " << "compares" << endl;
+	return ss.str();
+}
+
+string Student::print_set_find()
+{
+	stringstream ss;
+	//int quarter_size = studvec.size() / 4;
+	//int half_size = studvec.size() / 2;
+	//int size = studvec.size();
+
+	ss << "std::set.find\n" << "size: " << "size" << "    " << "compares: " << "compares" << endl;
+	ss << "size: " << "size" << "    " << "compares: " << "compares" << endl;
+	ss << "size: " << "size" << "    " << "compares: " << "compares" << endl;
+	return ss.str();
+}
